@@ -11,3 +11,4 @@ Kafka,Airflow,Amazon S3, Spark, Elastic Search, Cassandra and Flask.
 
 Proposed architecture
 
+
