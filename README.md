@@ -18,7 +18,7 @@ Amazon S3 -> Kafka -> Elastic Search -> Flask.
 
 Challenges:
 1. To automate the project.
-
+2. To scale the system.
 
 
 
