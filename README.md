@@ -1,23 +1,25 @@
-# PinSearch
+# NewsSearch
 
 Project Idea:
-To develop a search engine that helps to search for pins(pictures) from various topics like in Pinterest and also implement scheduling.
+To develop a search engine that helps to search for latest news and also implement scheduling.
 
 Purpose and use case:
-The purpose is to search for pins(pictures) from various topics and save them. The use case is to search and find pictures that they are interested in and store them for future purpose.
+The purpose is to search for latest news and see the results according to relevance. The use case is to search and find the latest news from around the world.
 
 Technologies:
 1.Kafka
 2.Airflow
 3.Amazon S3
-4.Spark
-5.Elastic Search
-6.Cassandra 
-7.Flask.
+4.Elastic Search
+5.Flask.
 
 Proposed architecture:
+Amazon S3 -> Kafka -> Elastic Search -> Flask.
 
-Pinterest API -> Kafka -> Amazon S3 -> Spark -> Elastic Search -> Cassandra -> Flask.
+Challenges:
+1. To get the data from Amazon S3 for every 15 minutes and update the Elasticsearch index accordingly.
+2. To automate the project.
 
+Specifications:
 
 
