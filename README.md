@@ -17,9 +17,8 @@ Proposed architecture:
 Amazon S3 -> Kafka -> Elastic Search -> Flask.
 
 Challenges:
-1. To get the data from Amazon S3 for every 15 minutes and update the Elasticsearch index accordingly.
-2. To automate the project.
+1. To automate the project.
 
-Specifications:
+
 
 
