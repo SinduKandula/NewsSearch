@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flask UI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  html { 
+  background: url("https://s3.envato.com/files/221395727/Globe%20Blue%20News%20Background_00170.jpg") no-repeat center center fixed; 
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body 
+{	
+	background: none;
+    font-family: Arial;
+    padding: 50px;
+
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+a{
+	text-decoration:none;
+	color:white;
+	padding:50px;
+
+}
+.search {
+    height: 100%;
+    width: 100%;
+   	margin-top: 130px;
+}
+
+.search-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+
+.search input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: black;
+    float: left;
+    width: 80%;
+    background: #bbb ;
+}
+
+
+.search button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    background: #87CEFA;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #191970;
+}
+
+.search_results{
+  color: white;
+  padding: 70px;
+  margin-top: 50px;
+}
+  	
+  </style>
+</head>
+
+<body>
+	
+	<h2>Welcome to NewSearch</h2>	
+
+	<div id="myOverlay" class="search">
+	  <div class="search-content">
+	    <form action="/" method="post" autocomplete="off">
+	      <input type="text" placeholder="Search.." name="stext" id="stext" value="{{stext}}" >
+	      <button type="submit"><i class="fa fa-search"></i></button>
+		
+	    </form>
+	  </div>
+	</div>
+
+
+    <div class="search_results">
+      {% for doc in response %}
+         <a href="url">{{doc}}</a><br><br><br>
+      {% endfor %}
+    </div>
+   
+</body>
+</html>
