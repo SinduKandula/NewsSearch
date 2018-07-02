@@ -4,9 +4,6 @@
 ## Summary
 An application to search for real-time news articles.
 
-## Motivation
-To create a scalable architecture to process huge volumes of incoming data streams and provide search results are quickly as possible.    
-
 ## Pipeline
 ![Pipeline](pipeline.png)
 
